@@ -1,31 +1,23 @@
- <script type="application/ld+json">
+
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "운전자보험은 왜 필수인가요? (2026년 개정 사항 포함)",
+          "name": "운전자보험과 자동차보험의 차이점은 무엇인가요?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "2026년에도 운전자보험은 교통사고처리특례법상 12대 중과실 사고 발생 시 형사적 책임(벌금, 합의금, 변호사 선임 비용)을 대비하기 위해 필수입니다. 자동차보험의 민사적 배상 책임 외에 운전자 개인의 법적 방어를 위한 중요한 역할을 합니다."
+            "text": "자동차보험은 상대방의 피해를 보상하는 민사적 책임이 주 목적이며, 운전자보험은 운전자 본인의 형사적, 행정적 책임(벌금, 합의금, 변호사 선임비용)을 보장하는 것이 핵심입니다."
           }
         },
         {
           "@type": "Question",
-          "name": "화재보험 가입 시 아파트 거주자가 꼭 확인해야 할 특약은 무엇인가요?",
+          "name": "아파트 화재보험 가입 시 단체보험만으로 충분한가요?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "아파트 거주자는 '공동주택 관리규약'을 확인하고, 특히 옆집으로 번지는 화재에 대비하는 '배상책임 특약'과 우리 집 내부의 인테리어 및 가재도구 손해를 보장하는 특약에 충분히 가입해야 합니다. 화재보험은 대물배상뿐만 아니라 복구 비용도 보장합니다."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "운전자보험료를 절약할 수 있는 팁이 있나요?",
-          "@id": "#절약팁-답변",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "만기 환급금이 없는 순수보장형으로 가입하고, 불필요한 보장을 제외하여 보장 범위를 합리적으로 조절하며, 다이렉트 채널을 활용하여 설계사 수수료를 절감하는 것이 가장 큰 절약 팁입니다. **저렴한운전자보험**을 위해 보장 기간을 길게 설정하여 갱신 부담을 줄이는 것도 좋습니다."
+            "text": "단체보험은 보장 금액이 실제 피해액에 비해 턱없이 부족한 경우가 많으며, 가전제품 수리 비용이나 대물 배상 책임이 누락될 수 있어 개인용 화재보험 병행 가입이 권장됩니다."
           }
         }
       ]
@@ -33,462 +25,365 @@
     </script>
 
     <style>
-        /* 변수 설정: 부드러운 블루 계열과 따뜻한 포인트 컬러 */
         :root {
-            --primary-color: #1A5276; /* 짙은 네이비 블루 */
-            --secondary-color: #5DADE2; /* 부드러운 스카이 블루 */
-            --accent-color: #F39C12; /* 따뜻한 골드 오렌지 */
-            --text-color: #34495E; /* 진한 회색 텍스트 */
-            --bg-light: #F4F8FB; /* 아주 밝은 배경 */
-            --bg-mid: #EBF5FB; /* 중간 밝기 배경 */
-            --btn-cta: #E74C3C; /* 강렬한 레드 오렌지 CTA */
-            --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.08);
-            --border-radius: 12px;
+            --primary-bg: #F0F4F8;
+            --main-accent: #2C3E50;
+            --sub-accent: #3498DB;
+            --soft-teal: #E8F6F3;
+            --text-main: #2C3E50;
+            --text-sub: #5D6D7E;
+            --white: #FFFFFF;
+            --point-color: #E67E22;
         }
-        
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
-        
-        /* 기본 스타일 */
-        body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; background-color: var(--bg-light); color: var(--text-color); line-height: 1.7; font-weight: 400; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
-        a { color: var(--secondary-color); text-decoration: none; transition: color 0.3s; }
-        a:hover { color: var(--primary-color); text-decoration: underline; }
-        
-        /* 헤더 */
-        header { background-color: #fff; padding: 20px 0; border-bottom: 3px solid var(--secondary-color); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-        header h1 { margin: 0; font-size: 2.2em; color: var(--primary-color); font-weight: 700; text-align: center; }
-        header h1 a { color: inherit; }
 
-        /* 히어로 섹션 */
-        .hero { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: #fff; text-align: center; padding: 100px 20px 60px; position: relative; overflow: hidden; }
-        .hero h1 { font-size: 3.5em; margin-bottom: 20px; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
-        .hero p { font-size: 1.4em; margin-bottom: 40px; font-weight: 300; }
-        
-        /* CTA 버튼 */
-        .cta-btn { background-color: var(--btn-cta); color: #fff; padding: 18px 45px; font-size: 1.4em; font-weight: 700; border: none; border-radius: 50px; cursor: pointer; transition: background-color 0.3s, transform 0.2s; box-shadow: 0 6px 15px rgba(0,0,0,0.3); text-decoration: none; display: inline-block; margin-top: 15px; }
-        .cta-btn:hover { background-color: #C0392B; transform: translateY(-4px); }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            background-color: var(--primary-bg);
+            margin: 0;
+            padding: 0;
+        }
 
-        /* 비교견적 폼 */
-        .compare-form-box { background-color: #fff; padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow-subtle); margin-top: -50px; position: relative; z-index: 10; border-top: 5px solid var(--accent-color); }
-        .compare-form-box h2 { color: var(--primary-color); text-align: center; margin-bottom: 30px; font-size: 2.1em; font-weight: 700; }
-        .form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-        .form-group { margin-bottom: 15px; }
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; color: var(--primary-color); font-size: 0.95em; }
-        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; font-size: 1em; transition: border-color 0.3s; }
-        .form-group input:focus, .form-group select:focus { border-color: var(--secondary-color); outline: none; }
-        .full-width-btn { grid-column: 1 / -1; text-align: center; margin-top: 20px; }
-        .consent-text { font-size: 0.85em; color: #7f8c8d; text-align: center; margin-top: 20px; }
-        
-        /* 콘텐츠 섹션 */
-        .content-section { background-color: #fff; padding: 60px 0; margin-top: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow-subtle); }
-        .content-section.dark { background-color: var(--bg-mid); }
-        .content-section h2 { font-size: 2.8em; color: var(--primary-color); border-bottom: 4px solid var(--accent-color); padding-bottom: 15px; margin-bottom: 40px; text-align: center; font-weight: 700; }
-        .content-section h3 { font-size: 1.8em; color: var(--secondary-color); margin-top: 40px; margin-bottom: 15px; border-left: 5px solid var(--secondary-color); padding-left: 15px; font-weight: 600; }
-        .content-section h4 { font-size: 1.4em; color: var(--primary-color); margin-top: 25px; margin-bottom: 10px; font-weight: 500; }
-        .content-section p { margin-bottom: 20px; font-size: 1.05em; line-height: 1.8; }
-        
-        /* 특장점 그리드 */
-        .feature-grid { display: flex; flex-wrap: wrap; justify-content: space-around; text-align: center; margin-top: 30px; }
-        .feature-grid .item { width: calc(30% - 20px); margin: 10px; padding: 30px 20px; background-color: var(--bg-light); border-radius: 10px; border: 1px solid #eee; transition: transform 0.3s, box-shadow 0.3s; }
-        .feature-grid .item:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
-        .feature-grid .item .icon { font-size: 3em; color: var(--accent-color); margin-bottom: 15px; display: inline-block; }
-        .feature-grid .item h3 { font-size: 1.3em; color: var(--primary-color); margin-top: 0; margin-bottom: 10px; font-weight: 600; }
+        header {
+            background-color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--sub-accent);
+        }
 
-        /* 테이블 스타일 */
-        table { width: 100%; border-collapse: collapse; margin: 30px 0; font-size: 1em; background-color: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
-        th, td { padding: 15px; text-align: center; border: 1px solid #f0f0f0; }
-        th { background-color: var(--secondary-color); color: #fff; font-weight: 700; }
-        tr:nth-child(even) { background-color: var(--bg-mid); }
-        td strong { color: var(--btn-cta); font-weight: 700; }
+        header h1 {
+            font-size: 2.4rem;
+            color: var(--main-accent);
+            letter-spacing: -1px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 상세 분석 섹션 */
+        .info-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--main-accent);
+            border-left: 6px solid var(--sub-accent);
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: var(--sub-accent);
+            margin-top: 30px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* 비교 표 스타일 */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: var(--white);
+        }
+
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #D5DBDB;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .comparison-table th {
+            background-color: var(--soft-teal);
+            color: var(--main-accent);
+        }
+
+        /* 체류시간 증대를 위한 입력 폼 */
+        .interactive-form {
+            background: var(--main-accent);
+            color: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        input, select {
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .submit-btn {
+            grid-column: span 2;
+            background: var(--point-color);
+            color: white;
+            padding: 18px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+        }
 
         /* 키워드 리스트 */
-        .keyword-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; margin-top: 30px; }
-        .keyword-list li { background-color: var(--secondary-color); color: #fff; padding: 10px 20px; margin: 7px; border-radius: 25px; font-weight: 500; font-size: 0.9em; transition: background-color 0.3s; cursor: default; }
-        .keyword-list li:hover { background-color: var(--primary-color); }
-
-        /* FAQ 스타일 */
-        .faq-item { border: 1px solid var(--bg-mid); margin-bottom: 15px; border-radius: 8px; overflow: hidden; }
-        .faq-item h3 { background-color: var(--bg-mid); color: var(--primary-color); padding: 18px 25px; margin: 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-size: 1.1em; font-weight: 600; transition: background-color 0.3s; }
-        .faq-item h3:hover { background-color: #D6EAF8; }
-        .faq-item h3 span { font-size: 1.5em; font-weight: 700; }
-        .faq-item p { display: none; padding: 20px 25px; background-color: #fff; border-top: 1px solid var(--bg-mid); }
-        .faq-item.active h3 { background-color: var(--secondary-color); color: #fff; }
-        .faq-item.active h3 span { transform: rotate(45deg); }
-        .faq-item.active p { display: block; }
-
-        /* 외부 링크 스타일 */
-        .external-links { background-color: var(--bg-mid); padding: 30px; border-radius: 12px; margin-top: 40px; text-align: center; }
-        .external-links h3 { color: var(--primary-color); margin-top: 0; font-size: 1.6em; }
-        .external-links ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
-        .external-links li { margin: 10px 15px; }
-        .external-links a { color: var(--primary-color); font-weight: 500; padding: 8px 15px; border: 1px solid var(--primary-color); border-radius: 5px; display: inline-block; transition: background-color 0.3s, color 0.3s; }
-        .external-links a:hover { background-color: var(--primary-color); color: #fff; text-decoration: none; }
-
-        /* 푸터 */
-        footer { background-color: var(--primary-color); color: #EAECEE; text-align: center; padding: 40px 20px; font-size: 0.9em; margin-top: 50px; }
-        footer a { color: #fff; margin: 0 10px; font-weight: 400; }
-        footer a:hover { text-decoration: underline; }
-        footer p { margin: 5px 0; }
-        
-        /* 반응형 디자인 */
-        @media (max-width: 900px) {
-            .hero h1 { font-size: 2.5em; }
-            .hero p { font-size: 1.2em; }
-            .content-section h2 { font-size: 2em; }
-            .content-section h3 { font-size: 1.5em; }
-            .form-grid { grid-template-columns: 1fr; }
-            .feature-grid .item { width: calc(50% - 20px); }
-            .keyword-list { justify-content: flex-start; }
-            .keyword-list li { margin: 5px; font-size: 0.85em; }
-            .content-section { padding: 40px 0; }
-            .external-links ul { flex-direction: column; align-items: center; }
-            .external-links li { margin: 5px 0; }
-            .external-links a { width: 80%; max-width: 300px; text-align: center; }
+        .keyword-tag-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
         }
-        @media (max-width: 600px) {
-            .container { padding: 0 15px; }
-            .hero h1 { font-size: 2em; }
-            .hero p { font-size: 1em; }
-            .cta-btn { padding: 15px 30px; font-size: 1.2em; }
-            .compare-form-box { padding: 25px; margin-top: -30px; }
-            .feature-grid .item { width: 100%; margin: 10px 0; }
-            .content-section h2 { font-size: 1.8em; }
-            .content-section h3 { font-size: 1.3em; }
+
+        .tag {
+            background: var(--soft-teal);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--main-accent);
+        }
+
+        /* 신뢰성 외부 링크 */
+        .trust-links {
+            margin-top: 50px;
+            padding: 20px;
+            background: #EBEDEF;
+            border-radius: 10px;
+        }
+
+        .trust-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: var(--sub-accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer {
+            background: var(--main-accent);
+            color: #BDC3C7;
+            text-align: center;
+            padding: 50px 20px;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .form-grid { grid-template-columns: 1fr; }
+            .submit-btn { grid-column: 1; }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1><a href="/">운전자보험 화재보험 비교센터</a></h1>
+<header>
+    <div class="container">
+        <h1>운전자보험 화재보험 통합 가이드 및 맞춤 견적</h1>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="info-card">
+        <h2>안정적인 미래를 위한 필수 선택: 운전자보험과 화재보험</h2>
+        <p>
+            우리가 일상생활에서 마주하는 위험은 크게 도로 위와 주거 공간 안으로 나뉩니다. 자동차 사고 발생 시 형사적 책임을 보장하는 **운전자보험**과 소중한 자산인 주택을 보호하는 **화재보험**은 선택이 아닌 필수입니다. 본 가이드에서는 두 보험의 핵심 보장 내용을 심층 분석하고, 가장 합리적인 비용으로 가입할 수 있는 전략을 제시합니다.
+        </p>
+        <div class="keyword-tag-box">
+            <span class="tag">#운전자보험비교사이트</span>
+            <span class="tag">#주택화재보험추천</span>
+            <span class="tag">#아파트화재보험비교</span>
+            <span class="tag">#운전자보험벌금보장</span>
+            <span class="tag">#화재배상책임보험</span>
+            <span class="tag">#비갱신운전자보험</span>
         </div>
-    </header>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>운전자보험 화재보험료, 2026년 최저가 견적을 지금 바로 비교하세요!</h1>
-                <p>가장 합리적인 **운전자보험**과 **주택화재보험**을 한 번에! 복잡한 보험 시장에서 가장 **저렴한운전자보험**과 든든한 보장의 **화재보험**을 찾아드립니다.</p>
-                <div class="compare-form-box">
-                    <h2>실시간 운전자/화재보험료 통합 비교견적</h2>
-                    <p>간단한 정보 입력으로 **저렴한운전자보험** 및 **다이렉트화재보험** 상품을 즉시 비교해 드립니다.</p>
-                    <form action="#" method="post">
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="name_d">성함</label>
-                                <input type="text" id="name_d" placeholder="가입자 성함을 입력하세요" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone_d">연락처</label>
-                                <input type="tel" id="phone_d" placeholder="휴대폰 번호(010-0000-0000)" pattern="[0-9]{3}-[0-9]{3,4}-[0-9]{4}" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="birth_d">생년월일</label>
-                                <input type="text" id="birth_d" placeholder="YYYYMMDD (예: 19801025)" pattern="[0-9]{8}" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="ins_type_d">희망 보험</label>
-                                <select id="ins_type_d" required>
-                                    <option value="">선택</option>
-                                    <option value="driver">운전자보험</option>
-                                    <option value="fire">화재보험</option>
-                                    <option value="both">운전자/화재 모두</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="car_d">보유 차량(운전자보험 시)</label>
-                                <input type="text" id="car_d" placeholder="차종 (예: K5 2020년식)">
-                            </div>
-                            <div class="form-group">
-                                <label for="addr_d">주거 형태(화재보험 시)</label>
-                                <select id="addr_d">
-                                    <option value="">선택</option>
-                                    <option value="apartment">아파트</option>
-                                    <option value="house">주택/빌라</option>
-                                    <option value="officetel">오피스텔</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="full-width-btn">
-                            <button type="submit" class="cta-btn">운전자/화재보험료 최저가 비교 시작</button>
-                        </div>
-                        <p class="consent-text">개인 정보 수집 및 이용에 동의하며, 비교 견적에 필요한 정보 제공에 동의합니다.</p>
-                    </form>
-                </div>
+    <section class="interactive-form">
+        <h2>내게 맞는 예상 보험료 시뮬레이션</h2>
+        <p>간단한 정보를 입력하여 운전자보험 및 화재보험의 권장 보장 한도를 확인해보세요.</p>
+        <form class="form-grid">
+            <div class="form-group">
+                <label>가입 희망 유형</label>
+                <select>
+                    <option>운전자보험 전용</option>
+                    <option>화재보험 전용</option>
+                    <option>종합 패키지(운전자+화재)</option>
+                </select>
             </div>
-        </section>
-
-        <section class="content-section dark">
-            <div class="container">
-                <h2>운전자보험 화재보험, 왜 꼭 필요한가요?</h2>
-                <p>대한민국에서 운전과 주거는 필수적인 요소이며, 이 두 가지는 예기치 않은 사고와 위험에 항상 노출되어 있습니다. **운전자보험**은 교통사고 시 운전자 개인의 벌금, 변호사 선임 비용, 합의금 등 형사적 책임에 대한 법률 비용을 대비하게 해주는 필수 보험입니다. </p>
-                <p>반면, **화재보험**은 주택 또는 건물에서 발생할 수 있는 화재, 폭발, 붕괴 등의 손해뿐만 아니라, 예상치 못한 이웃집으로의 피해(배상책임)까지 보장해줍니다. 특히 **아파트화재보험**은 의무 가입 여부와 별개로, 공동 생활 공간에서의 위험을 대비하는 가장 현명한 방법입니다. 2026년 기준, 보험 시장의 트렌드는 위험 대비에 대한 소비자 인식이 높아지면서 **운전자보험추천** 상품과 **화재보험추천** 상품 모두 보장 범위가 더욱 세분화되고 있습니다.</p>
-
-                <h3>저희 센터의 세 가지 비교 특장점</h3>
-                <div class="feature-grid">
-                    <div class="item">
-                        <div class="icon">&#9889;</div> <h3>1분 통합 비교견적</h3>
-                        <p>바쁜 현대인을 위해 운전자와 **화재보험료**를 동시에 비교하여 시간을 절약해 드립니다. 여러 보험사를 일일이 방문할 필요가 없습니다.</p>
-                    </div>
-                    <div class="item">
-                        <div class="icon">&#10004;</div> <h3>보장 내용 맞춤 분석</h3>
-                        <p>단순히 **운전자보험싼곳**만을 찾는 것이 아니라, 벌금, 변호사 선임, 대물 배상 등 필수 보장을 중심으로 고객님께 최적화된 상품을 제안합니다.</p>
-                    </div>
-                    <div class="item">
-                        <div class="icon">&#128176;</div> <h3>다이렉트 최저가 안내</h3>
-                        <p>설계사 수수료가 없는 다이렉트 상품을 우선적으로 비교하여, 고객님이 **최저가운전자보험** 또는 **저렴한화재보험**에 가입할 수 있도록 도와드립니다.</p>
-                    </div>
-                </div>
-
-                <h3>함께 많이 찾는 키워드 (SEO 강화를 위한 키워드 그룹)</h3>
-                <ul class="keyword-list">
-                    <li>#운전자보험비교사이트</li>
-                    <li>#화재보험비교견적</li>
-                    <li>#운전자보험다이렉트</li>
-                    <li>#화재보험필수</li>
-                    <li>#운전자보험벌금</li>
-                    <li>#주택화재보험</li>
-                    <li>#아파트화재보험료</li>
-                    <li>#운전자보험가입시기</li>
-                    <li>#운전자보험보장내용</li>
-                    <li>#저렴한운전자보험</li>
-                    <li>#운전자보험특약</li>
-                    <li>#화재보험가격</li>
-                    <li>#배상책임보험</li>
-                    <li>#교통사고처리특례법</li>
-                    <li>#가재도구손해</li>
-                    <li>#화재보험순위</li>
-                    <li>#운전자보험만기환급형</li>
-                    <li>#운전자보험비갱신형</li>
-                    <li>#화재배상책임</li>
-                    <li>#자동차사고벌금</li>
-                    <li>#운전자보험자녀특약</li>
-                    <li>#12대중과실사고</li>
-                    <li>#변호사선임비용</li>
-                    <li>#운전자보험갱신형</li>
-                    <li>#2026운전자보험</li>
-                    <li>#영업용운전자보험</li>
-                    <li>#운전자보험필수특약</li>
-                    <li>#화재보험원상복구</li>
-                    <li>#오피스텔화재보험</li>
-                    <li>#임대인화재보험</li>
-                    <li>#임차인화재보험</li>
-                    <li>#운전자보험자기부담금</li>
-                    <li>#화재보험보상한도</li>
-                    <li>#운전자보험료계산</li>
-                    <li>#화재보험가입금액</li>
-                    <li>#운전자보험가장싼곳</li>
-                    <li>#화재보험1만원대</li>
-                    <li>#주택화재배상책임</li>
-                    <li>#벌금대비보험</li>
-                    <li>#자전거사고벌금</li>
-                    <li>#화재보험세입자</li>
-                    <li>#다이렉트운전자보험비교</li>
-                    <li>#화재보험재산종합</li>
-                    <li>#운전자보험필요성</li>
-                    <li>#자동차보험운전자보험차이</li>
-                    <li>#화재보험아파트의무</li>
-                    <li>#운전자보험비용</li>
-                    <li>#화재보험견적</li>
-                    <li>#운전자보험비교견적추천</li>
-                    <li>#화재보험상품</li>
-                </ul>
+            <div class="form-group">
+                <label>성별 및 연령</label>
+                <input type="text" placeholder="예: 남성 / 40세">
             </div>
-        </section>
+            <div class="form-group">
+                <label>주거 형태 (화재보험 선택 시)</label>
+                <select>
+                    <option>아파트</option>
+                    <option>빌라/다세대</option>
+                    <option>단독주택</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>운전 경력</label>
+                <input type="number" placeholder="단위: 년">
+            </div>
+            <div class="form-group">
+                <label>직업군</label>
+                <input type="text" placeholder="예: 사무직, 현장직">
+            </div>
+            <div class="form-group">
+                <label>연락처 (상세 견적용)</label>
+                <input type="tel" placeholder="010-0000-0000">
+            </div>
+            <button type="submit" class="submit-btn">최적화된 맞춤 보장 결과 보기</button>
+        </form>
+    </section>
 
-        <section class="content-section">
-            <div class="container">
-                <h2 id="운전자보험-심층분석">운전자보험 심층 분석: 2026년 가입 전략 및 절약 팁</h2>
-                
-                <p>
-                    **운전자보험**은 자동차보험으로 해결되지 않는 운전자 개인의 법적 방어 비용을 대비하기 위한 핵심 보험입니다. 특히 '교통사고처리 특례법'상 12대 중과실 사고나 중상해 사고 발생 시, 형사 합의금, 벌금, 변호사 선임 비용 등 막대한 경제적 부담을 덜어주는 역할을 합니다. **운전자보험료**를 절약하면서도 든든한 보장을 갖추는 것이 중요합니다.
-                </p>
-
-                <h3>운전자보험 핵심 보장 구성 (2026년 기준)</h3>
-                <p>
-                    최신 트렌드에 맞춰 다음 세 가지 핵심 보장을 중심으로 가입하는 것이 가장 효율적입니다.
-                </p>
-                
-                <h4>1. 교통사고처리지원금 (합의금)</h4>
-                <p>
-                    피해자에게 지급해야 하는 형사 합의금을 보장합니다. 과거에는 보장 한도가 높지 않았으나, 최근에는 최대 2억 원 이상으로 설정하는 것이 일반적입니다. **저렴한운전자보험**을 찾더라도 이 보장의 한도는 충분히 높게 설정해야 합니다.
-                </p>
-
-                <h4>2. 벌금 (대인/대물)</h4>
-                <p>
-                    법원에서 확정된 벌금형을 대신 납부해주는 보장입니다. 대인 벌금은 최대 3,000만 원, 대물 벌금은 최대 500만 원까지 보장되는 특약을 선택해야 법정 최고 한도에 대비할 수 있습니다. 2026년에도 이 한도는 교통사고 특례법에 따라 매우 중요하게 작용합니다.
-                </p>
-
-                <h4>3. 변호사 선임 비용</h4>
-                <p>
-                    구속되거나 공소 제기 시 변호사를 선임하는 데 드는 비용을 보장합니다. 초기 경찰 조사 단계부터 보장되는 특약을 선택하는 것이 유리하며, 최근에는 보장 한도가 5,000만 원 또는 그 이상으로 설정되는 추세입니다.
-                </p>
-                
-                <div class="external-links">
-                    <h3>운전자보험 관련 신뢰성 있는 정보 (외부 사이트)</h3>
-                    <ul>
-                        <li><a href="https://namu.wiki/w/운전자보험" target="_blank">운전자보험의 역할 (나무위키)</a></li>
-                        <li><a href="https://www.law.go.kr/법령/교통사고처리특례법" target="_blank">교통사고처리특례법 (국가법령정보센터)</a></li>
-                        <li><a href="https://www.fss.or.kr/main/index.do" target="_blank">금융감독원 보험 정보 (FSS)</a></li>
-                    </ul>
-                </div>
-
-                <h3>운전자보험료 절약을 위한 가입 팁 (2026년 업데이트)</h3>
-                
-                <table>
-                    <thead>
-                        <tr>
-                            <th>절약 항목</th>
-                            <th>내용</th>
-                            <th>절약 효과</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>**순수보장형 선택**</td>
-                            <td>만기 시 환급금이 없는 상품을 선택하여 보험료를 낮춥니다.</td>
-                            <td>**월 10~20%**</td>
-                        </tr>
-                        <tr>
-                            <td>**비갱신형 선택**</td>
-                            <td>초기 보험료는 다소 높으나, 보험료 인상 없이 최대 100세까지 보장되어 장기적으로 유리합니다. **저렴한운전자보험** 장기 유지에 유리.</td>
-                            <td>**총 납입액 절감**</td>
-                        </tr>
-                        <tr>
-                            <td>**다이렉트 가입**</td>
-                            <td>설계사 수수료를 절감하여 일반 가입 대비 저렴합니다.</td>
-                            <td>**평균 15~20%**</td>
-                        </tr>
-                        <tr>
-                            <td>**필수 특약만 집중**</td>
-                            <td>불필요한 상해, 진단비 등은 제외하고 핵심 보장만 강화합니다.</td>
-                            <td>**맞춤형 절약**</td>
-                        </tr>
-                    </tbody>
-                </table>
-                
-                <p>
-                    최근 **운전자보험료**는 운전자의 연령, 성별, 직업 등 다양한 위험률 산정 요인에 따라 달라집니다. 특히 직업군에 따라 운행 거리가 길거나 위험도가 높다고 판단될 경우 보험료가 할증될 수 있습니다. 따라서 **운전자보험가입** 시에는 자신의 라이프스타일에 맞는 특약 선택이 무엇보다 중요합니다. 예를 들어, 자전거를 많이 이용하는 분들을 위한 '자전거 사고 벌금' 특약 등도 고려해볼 만하며, 최근에는 반려동물 관련 사고 시 보장해주는 특약도 일부 상품에서 찾아볼 수 있습니다.
-                </p>
-                <p>
-                    비갱신형 상품의 경우, 초기 보험료를 확정하여 납입하기 때문에 20년, 30년 후의 보험료 인상 부담이 전혀 없어 장기적인 재정 계획에 큰 도움이 됩니다. 반면 갱신형은 초기 보험료가 저렴하다는 장점이 있지만, 갱신 시점에 나이 증가와 손해율에 따라 보험료가 크게 오를 수 있다는 점을 인지하고 비교해야 **운전자보험싼곳**을 현명하게 선택할 수 있습니다.
-                </p>
-                <p>
-                    또한, **다이렉트운전자보험**은 중간 유통 과정을 없애 가격 경쟁력을 확보하고 있으며, 고객이 직접 설계하고 비교할 수 있어 투명성이 높습니다. **운전자보험비교사이트**를 활용하여 여러 회사의 다이렉트 상품을 비교하는 것이 2026년 가장 효율적인 가입 방법입니다.
-                </p>
-
-                </div>
-        </section>
+    <section class="info-card">
+        <h2>운전자보험의 필요성과 핵심 보장 3요소</h2>
+        <p>
+            민사적 책임을 지는 자동차보험과 달리, 운전자보험은 형사적 책임을 방어하는 데 중점을 둡니다. 특히 '민식이법' 시행 이후 벌금 한도가 상향됨에 따라 관련 특약의 보장 금액 확인이 매우 중요해졌습니다.
+        </p>
         
-        <section class="content-section dark">
-            <div class="container">
-                <h2 id="화재보험-심층분석">화재보험 심층 분석: 아파트, 주택 화재보험료 절약 및 보장 가이드</h2>
-                
-                <p>
-                    **화재보험**은 주거 공간의 안전을 지키는 필수적인 방어막입니다. 특히, 대한민국은 주거 밀집도가 높기 때문에 이웃에게 피해를 입혔을 경우 발생하는 배상 책임이 매우 중요하며, 화재보험의 핵심은 여기에 있습니다. **화재보험료**는 건물의 구조, 면적, 가입하는 보장 범위 등에 따라 크게 달라집니다.
-                </p>
-                
-                <img src="https://via.placeholder.com/1000x300/F4F8FB/34495E?text=화재보험+핵심+보장+구조+다이어그램" alt="화재보험 핵심 보장 구조 다이어그램 이미지" style="width:100%; margin: 20px 0; border-radius: 8px;">
+        <h3>1. 교통사고 처리 지원금 (합의금)</h3>
+        <p>피해자가 중상해를 입거나 사망한 경우, 형사 합의를 위해 지불해야 하는 비용을 보장합니다. 최근에는 과거 3천만 원 수준에서 최대 2억 원 이상으로 보장 한도가 크게 확대되었습니다.</p>
 
-                <h3>화재보험 핵심 보장 및 아파트 거주자 필수 특약</h3>
-                
-                <h4>1. 건물 및 가재도구 손해</h4>
-                <p>
-                    건물 자체(골조, 벽 등)와 건물 내의 가재도구(가구, 전자제품, 의류 등)에 대한 직접적인 손해를 보상합니다. **주택화재보험**에서는 가입 금액을 실손가액(감가상각 적용)이 아닌 신가(재조달가액)로 설정해야 화재 발생 시 제대로 된 복구가 가능합니다.
-                </p>
+        <h3>2. 운전자 벌금 (대인/대물)</h3>
+        <p>도로교통법 위반으로 인해 법원으로부터 확정판결을 받은 벌금액을 보상합니다. 어린이 보호구역 내 사고 시 최대 3,000만 원까지 보장되는지 반드시 확인해야 합니다.</p>
 
-                <h4>2. 화재 배상책임 (가장 중요!)</h4>
-                <p>
-                    우리 집 화재가 이웃집으로 번져 피해를 입혔을 때, 법률상 배상해야 하는 금액을 보장합니다. **아파트화재보험** 가입 시 가장 중요한 특약이며, 대인/대물 한도를 충분히 높게 설정해야 합니다. 최근에는 무제한 보장 특약도 등장하고 있습니다.
-                </p>
+        <h3>3. 변호사 선임 비용</h3>
+        <p>사고로 인해 구속되거나 검사에 의해 공소 제기된 경우 변호사 비용을 실손 보장합니다. 경찰 조사 단계부터 보장되는 상품이 최근 트렌드입니다.</p>
 
-                <h4>3. 임시 거주 비용 및 잔존물 제거 비용</h4>
-                <p>
-                    화재로 인해 집에서 거주할 수 없을 때 발생하는 임시 거주 비용(예: 숙박비)과, 화재 잔존물을 청소하고 처리하는 데 드는 비용까지 보상해주는 특약입니다. **화재보험가입** 시 놓치기 쉬우나, 실제 피해 발생 시 매우 유용한 보장입니다.
-                </p>
-                
-                <div class="external-links">
-                    <h3>화재보험 관련 신뢰성 있는 정보 (외부 사이트)</h3>
-                    <ul>
-                        <li><a href="https://www.kisa.or.kr/main/index.jsp" target="_blank">주택 화재 안전 정보 (한국인터넷진흥원)</a></li>
-                        <li><a href="https://www.law.go.kr/법령/민법" target="_blank">민법상 손해배상 책임 (국가법령정보센터)</a></li>
-                    </ul>
-                </div>
+        <table class="comparison-table">
+            <thead>
+                <tr>
+                    <th>항목</th>
+                    <th>자동차보험</th>
+                    <th>운전자보험</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>주요 대상</td>
+                    <td>타인의 피해 (대인/대물)</td>
+                    <td>본인의 형사 책임 (벌금/합의금)</td>
+                </tr>
+                <tr>
+                    <td>가입 여부</td>
+                    <td>의무 가입</td>
+                    <td>선택 가입 (필수 권장)</td>
+                </tr>
+                <tr>
+                    <td>보장 방식</td>
+                    <td>민사적 보상</td>
+                    <td>행정적, 형사적 방어</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-                <h3>화재보험료 절약을 위한 가입 팁 (2026년 업데이트)</h3>
-
-                <p>
-                    **화재보험료**는 운전자보험과 마찬가지로 순수보장형을 선택하여 만기 환급금을 제거하는 것이 가장 좋습니다. 또한, 건물의 면적 대비 과도하게 높은 보장 금액을 설정하는 것보다는, 적정한 **가입금액**을 설정하고 배상책임 한도를 높이는 것이 현명합니다. **다이렉트화재보험** 역시 설계사 수수료 절감 효과로 **저렴한화재보험**에 가입할 수 있는 주요 채널입니다. 임대인이든 임차인이든 자신의 책임 범위를 명확히 하여 중복 가입을 피하고 필요한 보장에 집중해야 합니다.
-                </p>
-                
-                <p>
-                    **화재보험추천** 상품을 선택할 때는 반드시 우리 집의 구조를 고려해야 합니다. 주택의 경우 목조 주택인지, 철근 콘크리트 구조인지에 따라 보험사의 위험률 책정이 달라집니다. 특히 **아파트화재보험**은 이미 관리사무소를 통해 단체 화재보험이 가입되어 있을 가능성이 높지만, 이 단체보험은 대개 건물 전체의 공용 부분에 대한 보상에 집중되어 있어, 세대 내부의 가재도구 손해나 이웃에게 발생한 배상책임에 대한 보장 한도가 충분하지 않을 수 있습니다. 따라서 아파트 거주자는 개별적으로 **화재배상책임**과 **가재도구손해** 보장을 충분히 갖춘 **주택화재보험**에 추가로 가입하는 것이 바람직합니다.
-                </p>
-                <p>
-                    2026년 보험 트렌드는 예측하기 힘든 재해에 대한 보장 수요 증가입니다. 예를 들어, 태풍, 홍수, 지진 등 자연재해로 인한 손해를 보장하는 '풍수해 특약'도 **화재보험**에 추가하여 종합적인 안전망을 구축할 수 있습니다. **화재보험비교견적**을 받을 때 이와 같은 특약 포함 여부 및 보험료 차이를 꼼꼼히 확인하여, 가장 합리적인 **화재보험싼곳**을 찾는 것이 중요합니다.
-                </p>
-                </div>
-        </section>
+    <section class="info-card">
+        <h2>화재보험 가입 시 체크리스트: 아파트부터 단독주택까지</h2>
+        <p>
+            화재는 나만 조심한다고 예방할 수 있는 것이 아닙니다. 이웃집에서 시작된 불이 번질 경우에도 나의 자산을 보호해야 하며, 반대로 나의 부주의로 발생한 화재가 이웃에 피해를 줬을 때 발생하는 배상 책임은 감당하기 어려운 금액이 될 수 있습니다.
+        </p>
         
-        <section class="content-section">
-            <div class="container">
-                <h2>자주 묻는 질문 (FAQ)</h2>
-                <div class="faq-item">
-                    <h3 id="q1">운전자보험료와 화재보험료가 왜 회사마다 다른가요?<span>+</span></h3>
-                    <p>보험료는 각 보험사가 자체적으로 산정한 위험률(손해율), 사업비, 목표 이익률 등에 따라 달라지기 때문에 차이가 발생합니다. **운전자보험**은 운전자의 사고 이력, 직업, 가입 특약 구성에 따라, **화재보험**은 건물의 구조, 사용 용도(주택/상가), 가입 금액, 배상 책임 한도 등에 따라 요율이 달라지므로, 동일한 보장이라도 **화재보험비교견적**을 해보면 수만 원의 차이가 날 수 있습니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 id="q2">운전자보험의 필수 특약과 선택 특약의 차이는 무엇인가요?<span>+</span></h3>
-                    <p>필수 특약은 교통사고처리지원금(합의금), 벌금(대인/대물), 변호사 선임 비용 등 형사적 책임에 대비하는 보장입니다. 반면, 선택 특약은 상해 관련 진단비, 일상생활 배상 책임 등 부가적인 보장으로, **저렴한운전자보험**을 원할 경우 필수 특약만 집중적으로 강화하고 선택 특약은 제외하거나 최소화하는 것이 보험료 절약에 도움이 됩니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 id="q3">주택화재보험 가입 시 가재도구 보상은 어떻게 이루어지나요?<span>+</span></h3>
-                    <p>가재도구 보상은 통상적으로 실제 손해액을 기준으로 하지만, '감가상각'이 적용될 수 있습니다. 따라서 가재도구 손해 보장 특약에 가입할 때, 가입 금액을 실제 새로 구입할 수 있는 '신가' 기준으로 설정하는 것이 유리합니다. **화재보험**은 이사 등으로 가재도구가 변경될 경우 보장 내역을 주기적으로 점검하는 것이 좋습니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 id="q4">운전자보험은 언제 가입하는 것이 가장 좋고, 비갱신형이 무조건 좋은가요?<span>+</span></h3>
-                    <p>**운전자보험가입시기**는 운전면허 취득 직후 또는 자동차 구입 직후가 좋습니다. 비갱신형은 보험료 인상 없이 장기간 동일한 보험료를 납부한다는 장점이 있지만, 초기 보험료가 갱신형보다 비쌉니다. 60대 이후까지 장기간 보장을 원한다면 비갱신형이 유리하며, 단기간(10~20년) 동안만 저렴하게 유지하고 싶다면 갱신형이 합리적일 수 있습니다. 중요한 것은 본인의 운전 계획과 재정 상황에 맞는 상품을 **운전자보험비교사이트**에서 찾아보는 것입니다.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 id="q5">다이렉트 보험은 보장 내용이 일반 보험과 차이가 있나요?<span>+</span></h3>
-                    <p>보장 내용 자체는 거의 동일하며, 법적으로 요구되는 핵심 보장(벌금, 합의금 등)은 차이가 없습니다. **다이렉트운전자보험**이 더 저렴한 이유는 설계사나 대리점 수수료와 같은 중간 유통 비용을 줄였기 때문입니다. 따라서 보장 내용보다는 **운전자보험료**의 효율성에서 차이가 난다고 볼 수 있습니다.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p><strong>운전자보험 화재보험 비교센터</strong> &copy; 2026 All Rights Reserved.</p>
-            <p>
-                <a href="#">개인정보처리방침</a>
-                <a href="#">이용약관</a>
-                <a href="#">사업자 정보</a>
-                <a href="#">고객센터 (대표번호: 1588-XXXX)</a>
-            </p>
-            <p>본 사이트는 운전자보험 및 화재보험 상품의 비교 견적 정보만을 제공하며, 실제 보험 계약은 각 보험사 홈페이지 또는 앱을 통해 고객님 본인이 직접 체결하셔야 합니다. 보험 상품의 최종 결정은 고객의 책임이며, 해당 정보는 보험업법을 준수합니다.</p>
+        <h3>주거 형태별 화재보험 포인트</h3>
+        <ul>
+            <li>**아파트 화재보험**: 단체보험의 낮은 보장 한도를 보강하고, 가전제품 고장 수리비 특약을 추가하는 것이 유리합니다.</li>
+            <li>**빌라 및 다세대**: 인접 건물이 밀집해 있으므로 화재 배상 책임 특약을 최대치로 설정하는 것이 안전합니다.</li>
+            <li>**단독주택**: 건물 자체의 노후도에 따른 복구 비용 산정이 중요하며, 도난 사고 보장을 추가할 수 있습니다.</li>
+        </ul>
+
+        <h3>함께 많이 찾는 카테고리 정보</h3>
+        <p>
+            사용자들은 화재보험 외에도 일상생활배상책임, 누수 피해 보상, 임대인 화재보험 등에 높은 관심을 보입니다. 특히 누수로 인한 아랫집 피해는 일상생활배상책임 특약으로 해결 가능한 경우가 많으므로 종합적인 설계가 필요합니다.
+        </p>
+    </section>
+
+    <section class="info-card">
+        <h2>자주 묻는 질문 (FAQ)</h2>
+        <div class="faq-item">
+            <h3>Q: 운전자보험은 중복 보장이 가능한가요?</h3>
+            <p>A: 벌금이나 합의금 같은 실손 보장 항목은 여러 개 가입하더라도 실제 발생한 비용만큼만 비례 보상됩니다. 따라서 적정 금액으로 하나만 유지하는 것이 경제적입니다.</p>
         </div>
-    </footer>
-    
-    <script>
-        // FAQ 토글 기능 (사용자 경험 개선 및 체류 시간 증대)
-        document.querySelectorAll('.faq-item h3').forEach(item => {
-            item.addEventListener('click', event => {
-                const parent = item.parentElement;
-                
-                // 다른 FAQ 닫기 (선택 사항)
-                document.querySelectorAll('.faq-item').forEach(other => {
-                    if (other !== parent && other.classList.contains('active')) {
-                        other.classList.remove('active');
-                    }
-                });
+        <div class="faq-item">
+            <h3>Q: 화재보험 가입 시 6대 가전제품 수리비란 무엇인가요?</h3>
+            <p>A: TV, 냉장고, 세탁기, 에어컨, 김치냉장고, 전자레인지 등 주요 가전이 고장 났을 때 공식 서비스 센터 수리비를 보장해주는 매우 실용적인 특약입니다.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Q: 무면허나 음주 사고도 운전자보험에서 보장되나요?</h3>
+            <p>A: 아니요. 무면허, 음주, 뺑소니 사고는 보험의 면책 사유에 해당하여 어떠한 보장도 받을 수 없습니다.</p>
+        </div>
+    </section>
 
-                parent.classList.toggle('active');
-            });
+    <div class="trust-links">
+        <strong>참고 및 공신력 있는 정보원:</strong><br>
+        <a href="https://www.fss.or.kr" target="_blank">금융감독원</a> | 
+        <a href="https://www.knia.or.kr" target="_blank">손해보험협회</a> | 
+        <a href="https://namu.wiki/w/%EB%B3%B4%ED%97%98" target="_blank">나무위키: 보험</a> | 
+        <a href="https://www.kca.go.kr" target="_blank">한국소비자원</a> | 
+        <a href="https://www.moj.go.kr" target="_blank">법무부 교통법규 안내</a>
+    </div>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p><strong>운전자보험 화재보험 통합 비교 센터</strong></p>
+        <p>본 사이트는 소비자에게 유용한 보험 정보를 제공하며, 보험 계약의 직접적인 당사자가 아닙니다.</p>
+        <p>Copyright 2026. All Rights Reserved.</p>
+        <div style="margin-top: 20px;">
+            <a href="#" style="color: #BDC3C7; text-decoration: none;">이용약관</a> | 
+            <a href="#" style="color: #BDC3C7; text-decoration: none;">개인정보처리방침</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // 클릭 시 간단한 인터랙션 제공 (체류 시간 측정에 도움)
+    document.querySelectorAll('.faq-item h3').forEach(item => {
+        item.addEventListener('click', () => {
+            const p = item.nextElementSibling;
+            p.style.display = p.style.display === 'block' ? 'none' : 'block';
+            item.style.color = p.style.display === 'block' ? '#3498DB' : '#2C3E50';
         });
+    });
 
-        // 폼 유효성 검사 및 체류 시간 증대를 위한 추가 로직 (생략)
-    </script>
-</body>
-</html>
+    // 폼 제출 버튼 클릭 시 지연 효과 (체류 유도)
+    document.querySelector('.submit-btn').addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('입력하신 정보를 바탕으로 최적의 보험사 DB를 분석 중입니다. 약 1분만 기다려주세요.');
+    });
+</script>
+
+ 
